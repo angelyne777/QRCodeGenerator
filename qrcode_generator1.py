@@ -58,24 +58,23 @@ def multiple_qr_generation():
 
 def main_menu():
     print("📌 QR Code Generator 📌")
-    
-    print("\n===== MENU =====")
-    print("1. Generate a Single QR Code")
-    print("2. Generate Multiple QR Codes")
-    print("3. Exit")
+    while True:
+        print("\n===== MENU =====")
+        print("1. Generate a Single QR Code")
+        print("2. Generate Multiple QR Codes")
+        print("3. Exit")
 
-    choice = get_input("Choose (1/2/3): ")
+        choice = get_input("Choose (1/2/3): ")
 
-    if choice == '1':
-        single_qr_generation()
-    elif choice == '2':
-        multiple_qr_generation()
-    elif choice == '3':
-        print("👋 Goodbye!")
-        break
-    else:
-        print("❗ Invalid choice.")
+        if choice == '1':
+            single_qr_generation()
+        elif choice == '2':
+            multiple_qr_generation()
+        elif choice == '3':
+            print("👋 Goodbye!")
+            break
+        else:
+            print("❗ Invalid choice.")
 
 if __name__ == "__main__":
     main_menu()
-
