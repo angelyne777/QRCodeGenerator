@@ -71,7 +71,8 @@ def main_menu():
     elif choice == '2':
         multiple_qr_generation()
     elif choice == '3':
-        print("👋 Goodbye!"); 
+        print("👋 Goodbye!")
+        break
     else:
         print("❗ Invalid choice.")
 
